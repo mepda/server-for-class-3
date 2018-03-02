@@ -28,18 +28,9 @@
   function post(){
     let chosen_name = document.querySelector('#name').value
     let data = {name: chosen_name};
-    fetch('http://localhost:3000/', {
-      body: JSON.stringify(data),
-      method: 'POST',
-      headers: {
-      'Accept': 'application/json',
-      'Content-Type': 'application/json'
-      }
-    }).then(res=>console.log(res))
+    /* TODO write a post function to http://localhost:3000/ then
+        console.log the response object, then refresh the page */
 
-    setTimeout(function(){
-      location.reload()
-    }, 5000);
   }
 </script>
 </body>
